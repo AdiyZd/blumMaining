@@ -7,8 +7,19 @@ import datetime
 from colorama import init, Fore, Style
 init(autoreset=True)
 
-bot_token = "({ISI DENGAN BOT TOKEN KALIAN YA})" # KALO ADA YANG BELOM PAHAM SILAHKAN DI TANYAKAN DI NOMOR 
-id_saya = "({INI DI ISI DENGAN CHAT ID AKUN TELE KALIAN})" # NO WHATSAPP :  +62 838-2463-4974
+# 7860191147:AAHTjykZcOdAScbjGIelQQYAVTFajJtfLuc
+# 7355777672
+# memasukan nilai input user
+def interaksi(prompt):
+    while True:
+        value = input(prompt)
+        if value: # jika nilai true akan mengeksekusi code selanjutnya
+            return value
+        else: # jika nilai nya false maka looping 1 di skip
+            print("masukan bot token dan user id tele masbroo!!") 
+
+bot_token = interaksi("Masukan Bot Token mas! : ") # KALO ADA YANG BELOM PAHAM SILAHKAN DI TANYAKAN DI NOMOR 
+id_saya = interaksi("Masukan id telegram nya mas (nilainya harus namber ya!) : ") # NO WHATSAPP :  +62 838-2463-4974
 
 def send_telegram_message(bot_token, id_saya, message):
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
