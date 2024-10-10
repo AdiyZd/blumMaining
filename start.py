@@ -8,7 +8,7 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 bot_token = "({ISI DENGAN BOT TOKEN KALIAN YA})" # KALO ADA YANG BELOM PAHAM SILAHKAN DI TANYAKAN DI NOMOR 
-id_saya = "({INI DI ISI DENGAN CHAT ID AKUN TELE KALIAN})" # NO WHATSAPP :  
+id_saya = "({INI DI ISI DENGAN CHAT ID AKUN TELE KALIAN})" # NO WHATSAPP :  +62 838-2463-4974
 
 def send_telegram_message(bot_token, id_saya, message):
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
